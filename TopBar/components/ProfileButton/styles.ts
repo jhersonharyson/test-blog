@@ -23,7 +23,10 @@ export const Container = styled.div`
     color: #70b5f9;
   }
 
-  svg {
+  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
     margin-left: 19px;
   }
 `;

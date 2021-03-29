@@ -5,6 +5,7 @@ import HomeButton from "./components/HomeButton";
 import MyNetworkButton from "./components/MyNetworkButton";
 import MessageButton from "./components/MessageButton";
 import NotificationButton from "./components/NotificationButton";
+import ProfileButton from "./components/ProfileButton";
 
 import { Container } from "./styles";
 const TopBar = ({
@@ -20,7 +21,11 @@ const TopBar = ({
         <HomeButton />
         <MyNetworkButton />
         <MessageButton />
-        <NotificationButton />
+        <NotificationButton selected={true} />
+
+        <ProfileButton
+          profile={"https://randomuser.me/api/portraits/men/54.jpg"}
+        />
       </div>
     </Container>
   );

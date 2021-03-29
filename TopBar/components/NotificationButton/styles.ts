@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80px;
+  width: 84px;
   padding: 8px;
   border-radius: 4px;
   display: flex;
@@ -24,6 +24,6 @@ export const Container = styled.div`
   }
 
   svg {
-    margin-left: 19px;
+    margin-left: 21px;
   }
 `;

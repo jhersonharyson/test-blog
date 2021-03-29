@@ -33,4 +33,10 @@ export const Container = styled.div`
     width: auto;
     height: 29px;
   }
+  .image-name{
+    max-width: 100px;
+      white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
 `;

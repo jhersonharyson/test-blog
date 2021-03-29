@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import Typography from "@material-ui/core/Typography";
 import { Container } from "./styles";
 const PhotoButton = ({ handleSelect = () => {} }) => {
-  const [file, setFile] = useState([]);
+  const [file, setFile] = useState(null);
+  const [filename, setFilename] = useState(null);
   const reader = new FileReader();
-  reader.onload = (e) => {
-    setFile({ ...file, src: e.target.result });
+  reader.onload = e => {
+    setFile(e.target.result);
   };
 
   const handleClick = () => {
@@ -15,13 +16,13 @@ const PhotoButton = ({ handleSelect = () => {} }) => {
     fileInput.accept = "image/*";
     fileInput.onchange = e => {
       console.log(e);
-      setFile({ name: e.path[0].files[0].name });
       reader.readAsDataURL(e.path[0].files[0]);
+      setFilename(e.path[0].files[0].name);
       handleSelect(e.path[0].files);
     };
     fileInput.click();
   };
-  return (
+  return !file ? (
     <Container onClick={handleClick}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -38,16 +39,19 @@ const PhotoButton = ({ handleSelect = () => {} }) => {
       <Typography variant="caption" display="block" gutterBottom>
         Foto
       </Typography>
-      {file?.src &&
-      <div>
-       <img className="image-preview" src={file.src} />
-     
-        <Typography variant="caption" display="block" gutterBottom>
-          {file.name}
-        </Typography>
-      </div>
-      }
-    
+    </Container>
+  ) : (
+    <Container>
+      <img className="image-preview" src={file} />
+
+      <Typography
+        variant="caption"
+        className="image-name"
+        display="block"
+        gutterBottom
+      >
+        {filename}
+      </Typography>
     </Container>
   );
 };

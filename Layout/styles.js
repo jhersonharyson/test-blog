@@ -15,7 +15,9 @@ export const Container = styled.div`
 
   header {
     grid-column: span 3;
-    padding: 30px;
+    // padding: 30px;
+
+    padding-bottom: 12px;
     text-align: center;
     font-size: 1.4em;
     background-color: #369;

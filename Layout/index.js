@@ -3,12 +3,15 @@ import "./styles.scss";
 import CardItem from "../Card";
 import FeedIdentity from "../FeedIdentity";
 import NewPost from "../NewPost";
+import TopBar from "../TopBar";
 
 import { Container } from "./styles";
 const Layout = () => {
   return (
     <Container>
-      <header>Header</header>
+      <header>
+        <TopBar />
+      </header>
       <nav>
         <FeedIdentity />
       </nav>

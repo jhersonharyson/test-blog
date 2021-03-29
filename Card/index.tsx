@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -9,19 +8,11 @@ import CardActions from "@material-ui/core/CardActions";
 import Collapse from "@material-ui/core/Collapse";
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { red } from "@material-ui/core/colors";
-import FavoriteIcon from "@material-ui/icons/Favorite";
-import ThumbUpIcon from "@material-ui/icons/ThumbUp";
-import ThumbUpOutlineIcon from "@material-ui/icons/ThumbUpOutline";
-import ShareIcon from "@material-ui/icons/Share";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
-import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import SendIcon from "@material-ui/icons/Send";
-import Input from "@material-ui/core/Input";
+
 import Paper from "@material-ui/core/Paper";
 import InputBase from "@material-ui/core/InputBase";
 
@@ -112,11 +103,7 @@ const CardItem = ({}) => {
                   size="small"
                 />
 
-                <IconButton
-                  type="submit"
-                  className={classes.iconButton}
-                  aria-label="search"
-                >
+                <IconButton className={classes.iconButton} aria-label="search">
                   <SendIcon />
                 </IconButton>
               </Paper>

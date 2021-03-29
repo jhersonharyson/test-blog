@@ -31,7 +31,7 @@ const NewPost = ({}) => {
               size="small"
             />
 
-            <IconButton type="submit" aria-label="search">
+            <IconButton aria-label="search">
               <SendIcon />
             </IconButton>
           </Paper>

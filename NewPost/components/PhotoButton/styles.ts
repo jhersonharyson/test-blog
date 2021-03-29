@@ -39,4 +39,8 @@ export const Container = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
   }
+
+  .close-icon{
+    margin-top: 2px
+  }
 `;

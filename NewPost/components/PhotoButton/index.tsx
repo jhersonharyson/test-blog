@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
 import Typography from "@material-ui/core/Typography";
+import CloseIcon from "@material-ui/icons/Close";
+
 import { Container } from "./styles";
-const PhotoButton = ({ handleSelect = () => {} }) => {
+const PhotoButton = ({ handleSelect = (file: any) => {} }) => {
   const [file, setFile] = useState(null);
   const [filename, setFilename] = useState(null);
   const reader = new FileReader();
@@ -21,6 +23,12 @@ const PhotoButton = ({ handleSelect = () => {} }) => {
       handleSelect(e.path[0].files);
     };
     fileInput.click();
+  };
+
+  const handleClear = () => {
+    setFile(null);
+    setFilename(null);
+    handleSelect(null);
   };
   return !file ? (
     <Container onClick={handleClick}>
@@ -52,6 +60,8 @@ const PhotoButton = ({ handleSelect = () => {} }) => {
       >
         {filename}
       </Typography>
+
+      <CloseIcon className="close-icon" onClick={handleClear} />
     </Container>
   );
 };

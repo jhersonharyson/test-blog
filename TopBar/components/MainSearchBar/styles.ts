@@ -2,12 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 8px;
-  border-radius: 4px;
   display: flex;
   align-itens: center !important;
-  background-color: #fff;
-
-
 
   & > span {
     margin-left: 6px;
@@ -27,22 +23,22 @@ export const Container = styled.div`
   }
 
   .image-preview {
-    margin-left: 24px
+    margin-left: 24px;
     width: auto;
     height: 29px;
   }
-  .image-name{
+  .image-name {
     max-width: 100px;
-      white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .close-icon{
-    margin-top: 2px
+  .close-icon {
+    margin-top: 2px;
   }
 
-  .mini-logo{
+  .mini-logo {
     width: 42px;
     height: 40px;
     display: flex;
@@ -52,21 +48,19 @@ export const Container = styled.div`
     color: #fff;
     border-radius: 3px;
     transform: scale(0.8);
-   
-    
 
     span {
       display: flex;
       justify-content: center;
       align-items: center;
       letter-spacing: -3px;
-       font-weight: 800;
-       font-size: 26px;
-       margin-right: 2px
+      font-weight: 800;
+      font-size: 26px;
+      margin-right: 2px;
     }
   }
 
-  .search-input{
+  .search-input {
     display: flex;
     align-itens: center;
     background-color: #eef3f8;
@@ -74,12 +68,11 @@ export const Container = styled.div`
     transition: 1s;
     padding-left: 0px;
     width: 15vw;
+    overflow: overlay;
 
     &:hover {
-       width: 20vw;
+      width: 20vw;
     }
-    
-  
 
     svg {
       margin-top: 6px;

@@ -13,13 +13,12 @@ const TopBar = ({
   handleClick = (type: any) => {}
 }) => {
   return (
-    <Container className="container p-0 d-flex justify-content-between">
-      <div>
-        <MainSearchBar onSearch={onSearch} />
-      </div>
+    <Container className="container p-0 d-flex justify-content-between align-items-center">
+      <MainSearchBar onSearch={onSearch} />
+
       <div className="d-flex">
         <HomeButton />
-        <MyNetworkButton />
+        <MyNetworkButton selected={true} />
         <MessageButton />
         <NotificationButton selected={true} />
 

@@ -17,10 +17,10 @@ export const Container = styled.div`
     grid-column: span 3;
     // padding: 30px;
 
-    padding-bottom: 12px;
+    padding-bottom: 0px;
     text-align: center;
     font-size: 1.4em;
-    background-color: #369;
+    background-color: #fff;
     color: white;
   }
 

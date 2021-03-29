@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 84px;
+  width: 92px;
   padding: 8px;
-  border-radius: 4px;
+  padding-bottom: 2px;
+  padding-top: 2px;
   display: flex;
   flex-direction: column;
   align-itens: center !important;
   justify-content: center;
-  background-color: #fff;
-  box-sizing: border-box;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #fff0;
 
   &.active {
     border-bottom: 4px solid black;
@@ -30,6 +29,10 @@ export const Container = styled.div`
   }
 
   svg {
-    margin-left: 21px;
+    margin-left: 25px;
+  }
+
+  span {
+    margin: 0;
   }
 `;

@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80px;
+  width: 92px;
   padding: 8px;
-  border-radius: 4px;
+  padding-bottom: 2px;
+  padding-top: 2px;
   display: flex;
   flex-direction: column;
   align-itens: center !important;
   justify-content: center;
-  background-color: #fff;
+  border-bottom: 4px solid #fff0;
 
   &:hover {
     cusor: pointer;
@@ -27,6 +28,10 @@ export const Container = styled.div`
     width: 24px;
     height: 24px;
     border-radius: 12px;
-    margin-left: 19px;
+    margin-left: 27px;
+  }
+
+  span {
+    margin: 0;
   }
 `;

@@ -1,31 +1,22 @@
 import React, { useState } from "react";
 
 import Typography from "@material-ui/core/Typography";
-import CloseIcon from "@material-ui/icons/Close";
 
 import { Container } from "./styles";
-const TopBar = ({
+const MyNetworkButton = ({
   onSearch = (type: any) => {},
   handleClick = (type: any) => {}
 }) => {
   return (
     <Container>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        data-supported-dps="24x24"
-        fill="currentColor"
-        className="mercado-match"
-        width="24"
-        height="24"
-        focusable="false"
-      >
-        <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm1 13a1 1 0 01-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 011-1h14a1 1 0 011 1zm-2-7a2 2 0 11-2-2 2 2 0 012 2z" />
+      <svg id="global-nav-icon--mercado__my-network" height="24" width="24">
+        <path d="m12 16v6h-9v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3zm5.5-3c1.9 0 3.5-1.6 3.5-3.5s-1.6-3.5-3.5-3.5-3.5 1.6-3.5 3.5 1.6 3.5 3.5 3.5zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5v4.5h7v-4.5c0-1.4-1.1-2.5-2.5-2.5zm-11-13c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z" />
       </svg>
+
       <Typography variant="caption" display="block" gutterBottom>
-        Foto
+        Minha rede
       </Typography>
     </Container>
   );
 };
-export default TopBar;
+export default MyNetworkButton;

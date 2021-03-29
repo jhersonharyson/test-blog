@@ -7,10 +7,7 @@ export const Container = styled.div`
   align-itens: center !important;
   background-color: #fff;
 
-  &:hover {
-    cusor: pointer;
-    background-color: #f2f2f2;
-  }
+
 
   & > span {
     margin-left: 6px;
@@ -26,7 +23,7 @@ export const Container = styled.div`
   }
 
   & svg > * {
-    color: #70b5f9;
+    color: #0a66c2;
   }
 
   .image-preview {
@@ -76,7 +73,11 @@ export const Container = styled.div`
     border-radius: 3px;
     transition: 1s;
     padding-left: 0px;
-    width: 40vw;
+    width: 15vw;
+
+    &:hover {
+       width: 20vw;
+    }
     
   
 
@@ -94,6 +95,7 @@ export const Container = styled.div`
       font-size: 14px;
       padding-left: 6px;
       padding-top: 4px;
+      width: 100%;
       :focus {
         outline: none;
         outline-width: 0;

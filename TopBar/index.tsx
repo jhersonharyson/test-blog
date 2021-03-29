@@ -8,8 +8,8 @@ const TopBar = ({
   handleClick = (type: any) => {}
 }) => {
   return (
-    <Container className="container pr-5">
-      <MainSearchBar onSearch={onSearch}/>
+    <Container className="container p-0">
+      <MainSearchBar onSearch={onSearch} />
     </Container>
   );
 };

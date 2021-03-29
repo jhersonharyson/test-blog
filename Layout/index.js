@@ -2,6 +2,8 @@ import React from "react";
 import "./styles.scss";
 import CardItem from "../Card";
 import FeedIdentity from "../FeedIdentity";
+import NewPost from "../NewPost";
+
 import { Container } from "./styles";
 const Layout = () => {
   return (
@@ -11,6 +13,7 @@ const Layout = () => {
         <FeedIdentity />
       </nav>
       <main>
+        <NewPost />
         <CardItem />
       </main>
       <aside>Related links</aside>

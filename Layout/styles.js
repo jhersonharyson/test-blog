@@ -35,8 +35,10 @@ export const Container = styled.div`
   }
 
   aside {
-    padding: 20px;
-    background-color: #936;
+    // margin-top: 10px;
+    // margin-left: 0px;
+    margin-right: 40px;
+    // background-color: #936;
   }
 
   footer {

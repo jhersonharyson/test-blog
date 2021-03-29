@@ -4,6 +4,7 @@ import CardItem from "../Card";
 import FeedIdentity from "../FeedIdentity";
 import NewPost from "../NewPost";
 import TopBar from "../TopBar";
+import ChatBox from "../ChatBox";
 
 import { Container } from "./styles";
 const Layout = () => {
@@ -19,7 +20,9 @@ const Layout = () => {
         <NewPost />
         <CardItem />
       </main>
-      <aside>Related links</aside>
+      <aside>
+        <ChatBox />
+      </aside>
       <footer>Footer</footer>
     </Container>
   );

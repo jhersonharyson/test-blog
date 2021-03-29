@@ -38,7 +38,7 @@ const FeedIdentity = () => {
                 src="https://randomuser.me/api/portraits/men/22.jpg"
               />
               <figcaption className="mutual-connection__caption">
-                10 amigos aonline
+                10 amigos online
               </figcaption>
             </figure>
             <a className="btn btn-outline-dark" role="button" href="#">

@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import MainSearchBar from "./components/MainSearchBar";
 import HomeButton from "./components/HomeButton";
 import MyNetworkButton from "./components/MyNetworkButton";
-import MessageButton from "./components/MessagesButton";
-import NotificationButton from "./components/NotificationsButton";
+import MessageButton from "./components/MessageButton";
+import NotificationButton from "./components/NotificationButton";
 
 import { Container } from "./styles";
 const TopBar = ({
@@ -19,7 +19,7 @@ const TopBar = ({
       <div className="d-flex">
         <HomeButton />
         <MyNetworkButton />
-        <MessagesButton />
+        <MessageButton />
         <NotificationButton />
       </div>
     </Container>

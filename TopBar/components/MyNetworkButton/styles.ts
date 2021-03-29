@@ -9,6 +9,11 @@ export const Container = styled.div`
   align-itens: center !important;
   justify-content: center;
   background-color: #fff;
+  border-bottom: 4px solid #fff;
+
+  &.active {
+    border-bottom: 4px solid black;
+  }
 
   &:hover {
     cusor: pointer;

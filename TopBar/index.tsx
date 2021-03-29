@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import MainSearchBar from "./components/MainSearchBar";
 import HomeButton from "./components/HomeButton";
 import MyNetworkButton from "./components/MyNetworkButton";
-import MessagesButton from "./components/MessagesButton";
+import MessageButton from "./components/MessagesButton";
+import NotificationButton from "./components/NotificationsButton";
 
 import { Container } from "./styles";
 const TopBar = ({
@@ -19,6 +20,7 @@ const TopBar = ({
         <HomeButton />
         <MyNetworkButton />
         <MessagesButton />
+        <NotificationButton />
       </div>
     </Container>
   );

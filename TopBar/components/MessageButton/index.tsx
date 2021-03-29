@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Typography from "@material-ui/core/Typography";
 
 import { Container } from "./styles";
-const MessagesButton = ({
-  onSearch = (type: any) => {},
+const MessageButton = ({
+  selected: boolean,
   handleClick = (type: any) => {}
 }) => {
   return (
@@ -19,4 +19,4 @@ const MessagesButton = ({
     </Container>
   );
 };
-export default MessagesButton;
+export default MessageButton;
